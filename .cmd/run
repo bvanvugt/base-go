@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+docker run --rm -it \
+    -v "${PWD}/src":/go/src/app \
+    -w /go/src/app \
+    -p 9000:9000 \
+    golang:1.8-alpine /bin/sh -c "go test -v && go install . && app"

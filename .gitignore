@@ -1,0 +1,4 @@
+# Local dev things
+.cmd/.*
+.DS_Store
+.vscode
